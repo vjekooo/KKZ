@@ -46,8 +46,8 @@
 		font-family: "Open Sans", verdana, arial, sans-serif;
 		/* Weights from Typekit: 300, 400 */
 	}
-	h2, h3 {
-		font-family: "tablet-gothic-condensed", "arial narrow", arial, verdana, sans-serif;
+	h2 {
+		font-family: arial, verdana, sans-serif;
 		/* Weights from Typekit: 200, 900 */
 	}
 
@@ -65,15 +65,15 @@
 	h2 {
 		color: #B5E2FA;
 		font-weight: 900; /* Heavy */
-		font-size: 6em;
+		font-size: 5em;
 		letter-spacing: 1px;
 		line-height: 1em;
 		margin-top: 0;
 		margin-bottom: 0;
 	}
 	h3 {
-		font-size: 2.25em;
-		font-weight: 200; /* Thin */
+		font-size: 1.5em;
+		font-weight: 400;
 		letter-spacing: 1px;
 		line-height: 1em;
 		padding: 0.5em 0 0.25em 0;
@@ -96,18 +96,23 @@
 	section.content div.title p a {
 		color: #fff;
 	}
-
-	/* Paragraph styles */
-	p, li { font-size: 1em;
-		font-weight: 400; /* Regular */
+	li {
+		font-size: 1em;
+		font-weight: 400;
 		line-height: 1.5em;
 		padding: 0.5em 0;
 	}
-	h1, section.content div.title p {
+
+	/* Paragraph styles */
+	p { font-size: 0.7em;
+		font-weight: 400;
+		line-height: 1.5em;
+		padding: 0.5em 0;
+	}
+	section.content div.title h5 {
 		border-top: 1px solid #ffffff;
 		margin-top: 0.5em;
-		padding-top: 1em;
-		font-weight: 300;
+		padding: 2% 2% 0 3%;
 		letter-spacing: 2px;
 		text-transform: uppercase;
 	}
@@ -125,34 +130,36 @@
 	}
 	div.logo {
 		background-color: #F9F7F3;
-		width: 81%;
-		height: 250px;
+		width: 100%;
+		height: 25vh;
 	}
 	div.wrapper {
 		z-index: 2;
 	}
 	section.content {
-		padding: 3%;
+		padding: 2%;
 	}
 	section.content div.title {
 		color: #fff;
 		padding: 0;
 	}
 	section.content div.latest-news {
-		background: rgba(255, 255, 255, 0.9);
+		background: rgb(255, 255, 255);
 		color: #333;
 		top: 10%;
-		/*margin-left: -30%;*/
 		padding: 3% 3% 3% 3%;
 	}
 	section.content div.content-news {
-		width: 47.5%;
+		width: 50%;
 		float: left;
+		margin-bottom: 3%;
+		height: 100%;
 	}
 	section.content div.content-other {
-		width: 47.5%;
-		margin-left: 5%;
+		width: 50%;
 		float: right;
+		margin-bottom: 5%;
+		height: 100%;
 	}
 	aside.nav-bar {
 		background: rgba(237, 222, 164, 0.9);
@@ -173,11 +180,17 @@
 		clear: both;
 		color: #fff;
 		padding: 1em 5%;
-		width: 76.35%;
+		width: 75.8%;
 		height: 15vh;
 	}
+	footer div.kontakt {
+		float: left;
+	}
+	footer div.code {
+		float: right;
+	}
 	footer a {
-		margin-right: 0.5em;
+		color: white;
 	}
 	footer img {
 		width: 5%;
@@ -186,30 +199,36 @@
 
 	/* Media queries */
 
-	/* 1 and up */
-	@media screen and (min-width: 1px) {
+	/* Mobile */
+	@media screen and (max-width: 460px) {
 
-		body {
-			font-size: 85%;
+		div.logo {
+			font-size: 1em;
+		}
+		section.content div.content-news {
+			width: 100%;
+		}
+		section.content div.content-other {
+			width: 100%;
+		}
+		footer {
+			width: 100%;
 		}
 
 	}
 	/* 550 and up */
 	@media screen and (min-width: 550px) {
 
-		body {
-			font-size: 2em;
-		}
-		h2 {
+		/*h2 {
 			font-size: 6em;
-		}
+		}*/
 		section.content {
 			width: 75%;
 		}
 		aside.nav-bar {
 			position: absolute;
 			right: 0;
-			top: 7.8%;
+			top: 8.4%;
 			width: 22%;
 		}
 		div.extra {
