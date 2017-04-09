@@ -1,0 +1,282 @@
+*/
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+	/* Defaults */
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	div, article, section, header, footer, nav, figure, li {
+		position:relative;
+	} /* For absolutely positioning elements within containers  */
+
+	.group:after {
+		display: block;
+		height: 0;
+		font-size: 0;
+		content: ".";
+		clear: both;
+		visibility: hidden;
+	} /* For clearing */
+
+	* {
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box;
+	} /* Apply a natural box layout model to all elements */
+
+	::-moz-selection {
+		background: #333;
+		color: #fff;
+	}
+	::selection {
+		background: #333;
+		color: #fff;
+	}
+
+	/* Rendering */
+	body, input, textarea {
+		color: #333; /*-webkit-font-smoothing:antialiased;*/
+	}
+
+	/* Families */
+	body {
+		font-family: "Open Sans", verdana, arial, sans-serif;
+		/* Weights from Typekit: 300, 400 */
+	}
+	h2, h3 {
+		font-family: "tablet-gothic-condensed", "arial narrow", arial, verdana, sans-serif;
+		/* Weights from Typekit: 200, 900 */
+	}
+
+	/* Headings */
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: normal;
+	}
+	h1 {
+		background: #F7A072;
+		color: #fff;
+		display: inline-block;
+		margin-bottom: 1em;
+		padding: 0.5em 1em;
+	}
+	h2 {
+		color: #B5E2FA;
+		font-weight: 900; /* Heavy */
+		font-size: 6em;
+		letter-spacing: 1px;
+		line-height: 1em;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	h3 {
+		font-size: 2.25em;
+		font-weight: 200; /* Thin */
+		letter-spacing: 1px;
+		line-height: 1em;
+		padding: 0.5em 0 0.25em 0;
+	}
+
+	/* Links */
+	a {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		color: #333;
+		text-decoration: none;
+		-moz-transition:border-color 0.2s ease-in-out;
+		-ms-transition:border-color 0.2s ease-in-out;
+		-o-transition:border-color 0.2s ease-in-out;
+		-webkit-transition:border-color 0.2s ease-in-out;
+		transition:border-color 0.2s ease-in-out;
+	}
+	a:hover {
+		border-color: #ea2e49;
+	}
+	section.content div.summary p a {
+		color: #fff;
+	}
+
+	/* Paragraph styles */
+	p, li { font-size: 1em;
+		font-weight: 400; /* Regular */
+		line-height: 1.5em;
+		padding: 0.5em 0;
+	}
+	h1, section.content div.summary p {
+		border-top: 1px solid #ffffff;
+		margin-top: 0.5em;
+		padding-top: 1em;
+		font-weight: 300;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+
+	/* Misc */
+
+
+	/* Layout */
+	html {
+		background: #F9F7F3;
+		padding: 2%;
+	}
+	body {
+		background: #B5E2FA;
+	}
+	div.logo {
+		background-color: #F9F7F3;
+		width: 81%;
+		height: 250px;
+	}
+	div.wrapper {
+		z-index: 2;
+	}
+	section.content {
+		padding: 3%;
+	}
+	section.content div.summary {
+		color: #fff;
+		padding: 0;
+	}
+	section.content div.latest-news {
+		background: rgba(255, 255, 255, 0.9);
+		color: #333;
+		top: 10%;
+		/*margin-left: -30%;*/
+		padding: 3% 3% 3% 3%;
+	}
+	div.main {
+		padding: 5%;
+	}
+	aside.nav-bar {
+		background: rgba(237, 222, 164, 0.9);
+		padding: 5%;
+		height: 60%;
+	}
+	aside.nav-bar ul {
+		padding: 0.5em 0 2em 0;
+	}
+	aside.nav-bar ul li {
+		color: rgba(0, 0, 0, 0.4);
+		list-style: none;
+		margin: 0;
+		padding: 0 0 0.825em 0;
+	}
+	footer {
+		background: rgba(15, 163, 177, 0.9);
+		clear: both;
+		color: #fff;
+		padding: 1em 5%;
+		width: 76.35%;
+		height: 15vh;
+	}
+	footer a {
+		margin-right: 0.5em;
+	}
+	footer img {
+		width: 5%;
+		height: 5%;
+	}
+
+	/* Media queries */
+
+	/* 1 and up */
+	@media screen and (min-width: 1px) {
+
+		body {
+			font-size: 85%;
+		}
+
+	}
+	/* 550 and up */
+	@media screen and (min-width: 550px) {
+
+		body {
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 6em;
+		}
+		section.content {
+			width: 66.6%;
+		}
+		aside.nav-bar {
+			position: absolute;
+			right: 0;
+			top: 10%;
+			width: 28%;
+		}
+		div.extra {
+			background: rgb(51, 55, 69);
+			bottom: 0;
+			right: 0;
+			position: fixed;
+			top: 0;
+			width: 25%;
+			z-index: 1;
+		}
+	}
+	/* 650 and up */
+	@media screen and (min-width: 650px) {
+
+		body {
+			font-size: 80%;
+		}
+
+	}
+	/* 700 and up */
+	@media screen and (min-width: 700px) {
+
+		body {
+			font-size: 90%;
+		}
+
+	}
+	/* 800 and up */
+	@media screen and (min-width: 800px) {
+
+		body {
+			font-size: 100%;
+		}
+
+	}
+	/* 900 and up */
+	@media screen and (min-width: 900px) {
+
+		body {
+			font-size: 110%;
+		}
+
+	}
+	/* 1500 and up */
+	@media screen and (min-width: 1500px) {
+
+		body {
+			font-size: 125%;
+		}
+
+	}
+	/* 1800 and up */
+	@media screen and (min-width: 1800px) {
+
+		body {
+			font-size: 150%;
+		}
+
+	}
+	/* 2100 and up */
+	@media screen and (min-width: 2100px) {
+
+		body {
+			font-size: 175%;
+		}
+
+	}
+	/* 2500 and up */
+	@media screen and (min-width: 2500px) {
+
+		body {
+			font-size: 200%;
+		}
+
+	}
