@@ -93,7 +93,7 @@
 	a:hover {
 		border-color: #ea2e49;
 	}
-	section.content div.summary p a {
+	section.content div.title p a {
 		color: #fff;
 	}
 
@@ -103,7 +103,7 @@
 		line-height: 1.5em;
 		padding: 0.5em 0;
 	}
-	h1, section.content div.summary p {
+	h1, section.content div.title p {
 		border-top: 1px solid #ffffff;
 		margin-top: 0.5em;
 		padding-top: 1em;
@@ -118,7 +118,7 @@
 	/* Layout */
 	html {
 		background: #F9F7F3;
-		padding: 2%;
+		padding: 1%;
 	}
 	body {
 		background: #B5E2FA;
@@ -134,7 +134,7 @@
 	section.content {
 		padding: 3%;
 	}
-	section.content div.summary {
+	section.content div.title {
 		color: #fff;
 		padding: 0;
 	}
@@ -145,8 +145,14 @@
 		/*margin-left: -30%;*/
 		padding: 3% 3% 3% 3%;
 	}
-	div.main {
-		padding: 5%;
+	section.content div.content-news {
+		width: 47.5%;
+		float: left;
+	}
+	section.content div.content-other {
+		width: 47.5%;
+		margin-left: 5%;
+		float: right;
 	}
 	aside.nav-bar {
 		background: rgba(237, 222, 164, 0.9);
@@ -198,13 +204,13 @@
 			font-size: 6em;
 		}
 		section.content {
-			width: 66.6%;
+			width: 75%;
 		}
 		aside.nav-bar {
 			position: absolute;
 			right: 0;
-			top: 10%;
-			width: 28%;
+			top: 7.8%;
+			width: 22%;
 		}
 		div.extra {
 			background: rgb(51, 55, 69);
