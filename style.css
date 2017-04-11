@@ -1,5 +1,7 @@
 */
-	@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+	@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
 
 	/* Defaults */
 
@@ -27,28 +29,12 @@
 		box-sizing:border-box;
 	} /* Apply a natural box layout model to all elements */
 
-	::-moz-selection {
-		background: #333;
-		color: #fff;
-	}
-	::selection {
-		background: #333;
-		color: #fff;
-	}
-
-	/* Rendering */
-	body, input, textarea {
-		color: #333; /*-webkit-font-smoothing:antialiased;*/
-	}
-
 	/* Families */
 	body {
-		font-family: "Open Sans", verdana, arial, sans-serif;
-		/* Weights from Typekit: 300, 400 */
+		font-family: "Roboto", verdana, arial, sans-serif;
 	}
 	h2 {
 		font-family: arial, verdana, sans-serif;
-		/* Weights from Typekit: 200, 900 */
 	}
 
 	/* Headings */
@@ -63,8 +49,8 @@
 		padding: 0.5em 1em;
 	}
 	h2 {
-		color: #B5E2FA;
-		font-weight: 900; /* Heavy */
+		color: #3774A6;
+		font-weight: 900;
 		font-size: 5em;
 		letter-spacing: 1px;
 		line-height: 1em;
@@ -72,11 +58,29 @@
 		margin-bottom: 0;
 	}
 	h3 {
-		font-size: 1.5em;
-		font-weight: 400;
-		letter-spacing: 1px;
+		font-family: "Roboto Slab", sans-serif;
+		font-size: 1.3em;
+		font-weight: 700;
 		line-height: 1em;
 		padding: 0.5em 0 0.25em 0;
+	}
+	h5 {
+		border-top: 1px solid #000000;
+		color: black;
+		margin: 3% 3% 3% 3%;
+		padding-top: 3%;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	h6 {
+		font-size: 0.7em;
+	}
+
+	/* Images */
+
+	img {
+		width: 100%;
+		height: 100%;
 	}
 
 	/* Links */
@@ -84,14 +88,14 @@
 		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 		color: #333;
 		text-decoration: none;
-		-moz-transition:border-color 0.2s ease-in-out;
-		-ms-transition:border-color 0.2s ease-in-out;
-		-o-transition:border-color 0.2s ease-in-out;
-		-webkit-transition:border-color 0.2s ease-in-out;
-		transition:border-color 0.2s ease-in-out;
+		-moz-transition:border-color 0.3s ease-in-out;
+		-ms-transition:border-color 0.3s ease-in-out;
+		-o-transition:border-color 0.3s ease-in-out;
+		-webkit-transition:border-color 0.3s ease-in-out;
+		transition:border-color 0.3s ease-in-out;
 	}
 	a:hover {
-		border-color: #ea2e49;
+		background-color: #ea2e49;
 	}
 	section.content div.title p a {
 		color: #fff;
@@ -104,32 +108,22 @@
 	}
 
 	/* Paragraph styles */
-	p { font-size: 0.7em;
-		font-weight: 400;
+	p {
+		font-size: 0.8em;
+		font-weight: 300;
 		line-height: 1.5em;
-		padding: 0.5em 0;
+		letter-spacing: 1px;
 	}
-	section.content div.title h5 {
-		border-top: 1px solid #ffffff;
-		margin-top: 0.5em;
-		padding: 2% 2% 0 3%;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-	}
-
-	/* Misc */
-
 
 	/* Layout */
 	html {
-		background: #F9F7F3;
+		background-color: #F8F9F9;
 		padding: 1%;
 	}
 	body {
-		background: #B5E2FA;
+		background-color: #F8F9F9;
 	}
 	div.logo {
-		background-color: #F9F7F3;
 		width: 100%;
 		height: 25vh;
 	}
@@ -137,15 +131,12 @@
 		z-index: 2;
 	}
 	section.content {
-		padding: 2%;
+		padding: 1%;
 	}
 	section.content div.title {
-		color: #fff;
 		padding: 0;
 	}
 	section.content div.latest-news {
-		background: rgb(255, 255, 255);
-		color: #333;
 		top: 10%;
 		padding: 3% 3% 3% 3%;
 	}
@@ -158,11 +149,10 @@
 	section.content div.content-other {
 		width: 50%;
 		float: right;
-		margin-bottom: 5%;
+		margin-bottom: 3%;
 		height: 100%;
 	}
 	aside.nav-bar {
-		background: rgba(237, 222, 164, 0.9);
 		padding: 5%;
 		height: 60%;
 	}
@@ -174,13 +164,14 @@
 		list-style: none;
 		margin: 0;
 		padding: 0 0 0.825em 0;
+		text-transform: uppercase;
 	}
 	footer {
-		background: rgba(15, 163, 177, 0.9);
+		background-color: rgba(15, 163, 177, 0.9);
 		clear: both;
 		color: #fff;
 		padding: 1em 5%;
-		width: 75.8%;
+		width: 100%;
 		height: 15vh;
 	}
 	footer div.kontakt {
@@ -191,10 +182,6 @@
 	}
 	footer a {
 		color: white;
-	}
-	footer img {
-		width: 5%;
-		height: 5%;
 	}
 
 	/* Media queries */
@@ -232,7 +219,7 @@
 			width: 22%;
 		}
 		div.extra {
-			background: rgb(51, 55, 69);
+			background-color: #86BCDE;
 			bottom: 0;
 			right: 0;
 			position: fixed;
