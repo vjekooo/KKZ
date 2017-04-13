@@ -4,12 +4,10 @@
 
 
 	/* Defaults */
-
 	* {
 		margin: 0;
 		padding: 0;
 	}
-
 	div, article, section, header, footer, nav, figure, li {
 		position:relative;
 	} /* For absolutely positioning elements within containers  */
@@ -49,7 +47,7 @@
 		padding: 0.5em 1em;
 	}
 	h2 {
-		color: white;
+		color: #355E96;
 		font-weight: 900;
 		font-size: 5em;
 		letter-spacing: 1px;
@@ -77,7 +75,6 @@
 	}
 
 	/* Images */
-
 	img {
 		width: 100%;
 		height: 100%;
@@ -109,6 +106,7 @@
 	i.fa {
 		font-size: 2em;
 	}
+
 	/* Paragraph styles */
 	p {
 		font-size: 0.8em;
@@ -129,8 +127,10 @@
 	}
 	div.logo {
 		width: 79%;
-		height: 35vh;
-		background-image: linear-gradient(#7D5ACF, #8D8DAB);
+		height: 50vh;
+		background-image: url("images/nnw.jpg");
+		background-size: 100%;
+		background-repeat: no-repeat;
 	}
 	div.wrapper {
 		z-index: 2;
@@ -160,14 +160,14 @@
 		margin-bottom: 3%;
 		height: 100%;
 	}
-	aside.nav-bar {
+	div.nav-bar {
 		padding: 5%;
 		height: 60%;
 	}
-	aside.nav-bar ul {
+	div.nav-bar ul {
 		padding: 0.5em 0 2em 0;
 	}
-	aside.nav-bar ul li {
+	div.nav-bar ul li {
 		color: rgba(0, 0, 0, 0.4);
 		list-style: none;
 		margin: 0;
@@ -224,7 +224,7 @@
 		section.content {
 			width: 80%;
 		}
-		aside.nav-bar {
+		div.nav-bar {
 			position: absolute;
 			right: 0;
 			top: 1%;
