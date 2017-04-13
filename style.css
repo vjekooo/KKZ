@@ -104,7 +104,7 @@
 		padding: 0.5em 0;
 	}
 	i.fa {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 	/* Paragraph styles */
@@ -125,21 +125,21 @@
 	body {
 		background-color: #F8F9F9;
 	}
-	div.logo {
+	div.header {
 		width: 79%;
-		height: 50vh;
-		background-image: url("images/nnw.jpg");
-		background-size: 100%;
-		background-repeat: no-repeat;
+		height: 300px;
+		padding: 1%;
+		text-align: center;
+	}
+	div.logo {
+
 	}
 	div.wrapper {
 		z-index: 2;
 	}
 	section.content {
+		overflow: hidden;
 		padding: 1% 2% 1% 1%;
-	}
-	div.logo {
-		padding: 2%;
 	}
 	section.content div.title {
 		padding: 0;
@@ -161,14 +161,13 @@
 		height: 100%;
 	}
 	div.nav-bar {
-		padding: 5%;
-		height: 60%;
+		padding: 2%;
 	}
 	div.nav-bar ul {
 		padding: 0.5em 0 2em 0;
 	}
 	div.nav-bar ul li {
-		color: rgba(0, 0, 0, 0.4);
+		font-size: 1.2em;
 		list-style: none;
 		margin: 0;
 		padding: 0 0 0.825em 0;
@@ -200,9 +199,14 @@
 		h2 {
 			font-size: 4em;
 		}
-		div.logo {
+		div.header {
 			width: 100%;
-			font-size: 1em;
+			height: 100%;
+			font-size: 0.7em;
+			content: url("images/kkz.jpg");
+		}
+		div.nav-bar {
+			background-color: #0081C4;
 		}
 		section.content div.content-news {
 			width: 100%;
@@ -218,20 +222,21 @@
 	/* 550 and up */
 	@media screen and (min-width: 550px) {
 
-		/*h2 {
-			font-size: 6em;
-		}*/
+		div.header {
+			background-image: url("images/nnw.jpg");
+			background-size: 100%;
+			background-repeat: no-repeat;
+		}
+		div.logo {
+			content: url("images/kkz.jpg");
+			width: 200px;
+			height: 200px;
+		}
 		section.content {
 			width: 80%;
 		}
 		div.nav-bar {
-			position: absolute;
-			right: 0;
-			top: 1%;
-			width: 20%;
-		}
-		div.extra {
-			background-color: #86BCDE;
+			background-color: #0081C4;
 			bottom: 0;
 			right: 0;
 			position: fixed;
