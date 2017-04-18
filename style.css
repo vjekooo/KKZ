@@ -12,22 +12,13 @@
 		position:relative;
 	} /* For absolutely positioning elements within containers  */
 
-	.group:after {
-		display: block;
-		height: 0;
-		font-size: 0;
-		content: ".";
-		clear: both;
-		visibility: hidden;
-	} /* For clearing */
-
 	* {
 		-moz-box-sizing:border-box;
 		-webkit-box-sizing:border-box;
 		box-sizing:border-box;
 	} /* Apply a natural box layout model to all elements */
 
-	/* Families */
+	/* Fonts */
 	body {
 		font-family: "Roboto", verdana, arial, sans-serif;
 	}
@@ -64,9 +55,10 @@
 	}
 	h5 {
 		border-top: 1px solid #000000;
+		/*background: linear-gradient(99deg, #fdcd3b 40%, #ffed4b 40%);*/
 		color: black;
-		margin: 3% 3% 3% 3%;
-		padding-top: 3%;
+		margin: 3% 3% 0 3%;
+		padding: 3% 3% 3% 3%;
 		letter-spacing: 2px;
 		text-transform: uppercase;
 	}
@@ -83,7 +75,7 @@
 	/* Links */
 	a {
 		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-		color: #333;
+		color: #F5F8F4;
 		text-decoration: none;
 		-moz-transition:border-color 0.3s ease-in-out;
 		-ms-transition:border-color 0.3s ease-in-out;
@@ -92,7 +84,7 @@
 		transition:border-color 0.3s ease-in-out;
 	}
 	a:hover {
-		background-color: #ea2e49;
+		border-color:#E6EAE8;
 	}
 	section.content div.title p a {
 		color: #fff;
@@ -223,6 +215,8 @@
 	@media screen and (min-width: 550px) {
 
 		div.header {
+			/*background: linear-gradient(-70deg, #BEA952 30%, rgba(0, 0, 0, 0) 30%),
+			url('images/nnw.jpg');*/
 			background-image: url("images/nnw.jpg");
 			background-size: 100%;
 			background-repeat: no-repeat;
